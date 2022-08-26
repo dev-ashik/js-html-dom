@@ -1,0 +1,14 @@
+The DOM Programming Interface
+
+    <script>
+        document.getElementById("demo").innerHTML = "hello wrld";
+    </script>
+
+    1. property :- 
+        (i) A property is a value that you can get or set (like changing the content of an HTML element).
+        (ii) example:- getElementById is a method.
+
+    2. method :- 
+        (i) A method is an action you can do (like add or deleting an HTML element).
+        (ii) example:- innerHTML is a property.
+

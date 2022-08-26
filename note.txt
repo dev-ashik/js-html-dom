@@ -1,0 +1,19 @@
+With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+
+DOM stand for:- Document Object Model (DOM)
+
+
+The W3C DOM standard is separated into 3 different parts:
+    1. Core DOM - standard model for all document types
+    2. XML DOM - standard model for XML documents
+    3. HTML DOM - standard model for HTML documents
+
+
+What is the HTML DOM?
+=> The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+In the DOM, all HTML elements are defined as objects.
+
+
+
+https://www.w3schools.com/js/js_htmldom_methods.asp
