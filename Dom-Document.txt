@@ -1,0 +1,77 @@
+The document object represents your web page.
+
+
+
+__________Finding HTML Elements____________
+
+Finding HTML Elements
+Method                                  |           Description
+_________________________________________________________________________________
+document.getElementById(id)             |    Find an element by element id
+document.getElementsByTagName(name)     |    Find elements by tag name
+document.getElementsByClassName(name)   |    Find elements by class name
+
+
+
+
+ __________Changing HTML Elements____________
+
+            Property                      |         Description
+_____________________________________________________________________________________________
+element.innerHTML =  new html content     |    Change the inner HTML of an element
+element.attribute = new value             |    Change the attribute value of an HTML element
+element.style.property = new style        |    Change the style of an HTML element
+
+
+            method                        |         Description
+_______________________________________________________________________________________________
+element.setAttribute(attribute, value)    |    Change the attribute value of an HTML element
+
+
+
+
+ __________Adding and Deleting Elements____________
+
+            method                   |         Description
+__________________________________________________________________________________________________
+document.createElement(element)      |    Create an HTML element of an HTML element
+document.removeChild(element)        |    Remove an HTML element
+document.appendChild(element)        |    Add an HTML element
+document.replaceChild(new, old)      |    Replace an HTML element
+document.write(text)                 |    Write into the HTML output stream
+
+
+
+ __________Adding Events Handlers____________
+             method                                         |         Description
+__________________________________________________________________________________________________
+document.getElementById(id).onclick = function(){code}      |    Adding event handler code to an onclick event
+
+ __________Finding HTML Objects____________
+              Property          |         Description
+__________________________________________________________________________________________________
+document.anchors                |   Returns all <a> elements that have a name attribute dom(1)
+document.applets                |   Deprecated  dom(1)
+document.baseURI                |	Returns the absolute base URI of the document	dom(3)
+document.body	                |   Returns the <body> element	                    dom(1)
+document.cookie	                |   Returns the document's cookie	dom(1)
+document.doctype	            |   Returns the document's doctype	dom(3)
+document.documentElement  	    |   Returns the <html> element	dom(3)
+document.documentMode	        |   Returns the mode used by the browser	dom(3)
+document.domain	                |   Returns the domain name of the document server	dom(1)
+document.documentURI	        |   Returns the URI of the document	dom(1)
+document.domConfig	            |   Obsolete.	dom(3)
+document.embeds	                |   eturns all <embed> elements	dom(3)
+document.forms	                |   Returns all <form> elements	dom(1)
+document.head	                |   Returns the <head> element	dom(3)
+document.images	                |   Returns all <img> elements	dom(1)
+document.implementation	        |   Returns the DOM implementation	dom(3)
+document.inputEncoding	        |   Returns the document's encoding (character set)	dom(3)
+document.lastModified	        |   Returns the date and time the document was updated	dom(3)
+document.links	                |   Returns all <area> and <a> elements that have a href attribute	dom(1)
+document.readyState	            |   Returns the (loading) status of the document	dom(3)
+document.referrer	            |   Returns the URI of the referrer (the linking document)	dom(1)
+document.scripts	            |   Returns all <script> elements	dom(3)
+document.strictErrorChecking	|   Returns if error checking is enforced	dom(3)
+document.title	                |   Returns the <title> element	dom(1)
+document.URL	                |   Returns the complete URL of the document dom(1)

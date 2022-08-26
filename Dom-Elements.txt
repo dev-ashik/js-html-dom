@@ -1,0 +1,73 @@
+1. Finding HTML elements by id 
+    document.getElementById("id-name").innerHTML;
+
+2. Finding HTML elements by tag name
+    document.getElementsByTagName("h1")[0].innerHTML;
+
+3. Finding HTML elements by class name
+    document.getElementsByClassName("name")[0].innerHTML;
+
+4. Finding HTML elements by CSS selectors
+    document.querySelectorAll(".name")[0].innerHTML;
+
+5. Finding HTML elements by HTML object collections
+    <form id="frm1" action="">
+        First name: <input type="text" name="fname" value="Donald"><br>
+        Last name: <input type="text" name="lname" value="Duck"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+    <script>
+      const formData = document.forms["frm1"];
+      for (let i = 0; i < formData.length; i++) {
+        console.log(formData.elements[i].value);
+      }
+    </script>
+
+
+
+
+6. document.anchors
+    <body>
+        <a href="" name="first">first</a>
+        <a href="" name="sectond">sectond</a>
+        <a href="" name="third">third</a>
+
+        <script>
+        const value = document.anchors;
+        console.log(value.length)
+
+        for (let i = 0; i < value.length; i++) {
+            console.log(value[i].innerHTML);
+        }
+        </script>
+    </body>
+
+7. document.body
+  <body>
+    <a href="" name="first">first</a>
+    <a href="" name="sectond">sectond</a>
+    <a href="" name="third">third</a>
+
+    <script>
+      const value = document.body;
+      console.log(value.innerHTML)
+    </script>
+  </body>
+
+8. document.documentElement
+<body>
+    <a href="" name="first">first</a>
+    <a href="" name="sectond">sectond</a>
+    <a href="" name="third">third</a>
+
+    <script>
+      const value = document.documentElement.innerHTML;
+      console.log(value)
+    </script>
+  </body>
+
+9. document.title
+    <script>
+      const value = document.title;
+      console.log(value)
+    </script>
