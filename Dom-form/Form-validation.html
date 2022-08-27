@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        box-sizing: border-box;
+      }
+
+      form {
+        width: 50rem;
+        overflow: hidden;
+      }
+
+      form label {
+        font-size: 2rem;
+        display: block;
+      }
+
+      form input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.7rem;
+        margin-bottom: 2rem;
+      }
+
+      form input[type="submit"] {
+        width: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="myForm" onsubmit="return handleValidateForm()">
+      <label for="name">Name: </label>
+      <input type="text" name="name" placeholder="Enter your name" />
+      <label for="name">Phone: </label>
+      <input type="tel" name="phone" placeholder="Enter your phone number" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["name"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+
+      handleValidateForm = () => {
+        const formData = document.forms["myForm"];
+
+        if (formData["name"].value === "" || formData["phone"].value == "") {
+          var message = "";
+
+          if (formData["name"].value === "") {
+            message += " Name must be filled out. \n";
+          } 
+          if (formData["phone"].value === "") {
+            message += " Phone number must be filled out.";
+          }
+
+          alert(message);
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>

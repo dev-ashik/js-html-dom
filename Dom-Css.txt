@@ -1,0 +1,12 @@
+Changing HTML Style
+    use this syntax:
+    document.getElementById(id).style.property = new style
+
+    example:- 
+    <body>
+        <button id="helloBtn">Hello</button>
+
+        <script>
+        document.getElementById("helloBtn").style.background = "red";
+        </script>
+    </body>
