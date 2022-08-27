@@ -1,0 +1,12 @@
+The addEventListener() method
+    Syntax: 
+        element.addEventListener(event, function, useCapture);
+        Note that:- you don't use the "on" prefix for the event; use "click" instead of "onclick".
+
+Add Many Event Handlers to the Same Element
+
+
+
+
+The removeEventListener() method
+The removeEventListener() method removes event handlers that have been attached with the addEventListener() method.

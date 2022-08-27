@@ -1,0 +1,38 @@
+DOM Events
+Examples of HTML events:
+    1. When a user clicks the mouse (onclick.html)
+        (i) Event Attributes
+            <body>
+                <h1 id="btn" onclick="handleClick()">click me</h1>
+                <script>
+                    const handleClick = () => {
+                        document.getElementById("btn").innerHTML = "Thank you";
+                    }
+                </script>
+            </body>
+        (ii) Assign Events Using the HTML DOM
+            <body>
+                <!-- Assign Events Using the HTML DOM -->
+                <h1 id="btn2" >click me</h1>
+                <script>
+                    const myFunction = () => {
+                        document.getElementById("btn2").innerHTML = "Thank you";
+                    }
+
+                    document.getElementById("btn2").onclick = myFunction;
+                </script>
+            </body>
+
+    2. When a web page has loaded
+    3. When an image has been loaded
+    5. When the mouse moves over an element
+        (i) onmouseover()
+        (ii) onmouseout()
+        (iii) onmousedown()
+        (iv) onmouseup()
+    6. When an input field is changed
+    7. When an HTML form is submitted
+    8. When a user strokes a key
+
+
+HTML Event Attributes

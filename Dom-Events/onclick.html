@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick</title>
+</head>
+<body>
+    <!-- Event Attributes -->
+    <h1 id="btn" onclick="handleClick()">click me</h1>
+    <script>
+        const handleClick = () => {
+            document.getElementById("btn").innerHTML = "Thank you";
+        }
+    </script>
+
+    <!-- Assign Events Using the HTML DOM -->
+    <h1 id="btn2" >click me</h1>
+    <script>
+        const myFunction = () => {
+            document.getElementById("btn2").innerHTML = "Thank you";
+        }
+
+        document.getElementById("btn2").onclick = myFunction;
+    </script>
+</body>
+</html>

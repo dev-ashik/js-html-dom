@@ -4,7 +4,9 @@ https://www.w3schools.com/css/css_pseudo_classes.asp
 HTML DOM Style Object Reference
 https://www.w3schools.com/jsref/dom_obj_style.asp
 
+dom animagion
+
 
 
 https://www.w3schools.com/js/js_htmldom_methods.asp
-dom html
+dom Navigation
