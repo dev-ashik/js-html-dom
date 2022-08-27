@@ -1,0 +1,51 @@
+Changing HTML Content
+    use this syntax:-
+        document.getElementById(id).innerHTML = new HTML
+    example:-
+        <body>
+            <h1 id="country">Bangladesh</h1>
+
+            <script>
+            document.getElementById("country").innerHTML = "China";
+            </script>
+        </body>
+
+
+Changing the Value of an Attribute
+    use this syntax:-
+        document.getElementById(id).attribute = new value
+    example:-
+        <body>
+            <h1 id="country">Bangladesh</h1>
+
+            <script>
+            document.getElementById("country").id = "name";
+            </script>
+        </body>
+
+
+
+Dynamic HTML content
+example:-
+    <body>
+        <h1 id="date"></h1>
+
+        <script>
+        document.getElementById("date").innerHTML = "Date: " + Date();
+        </script>
+    </body>
+
+
+
+document.write()
+    => In JavaScript, document.write() can be used to write directly to the HTML output stream.
+    
+    example:-
+    <body>
+        <script>
+        document.write("hello World!")
+        </script>
+    </body>
+
+
+
